@@ -1482,7 +1482,7 @@ ENDIF
 	mov	A, Temp2
 	subb	A, #0	
 	mov	Temp4, A
-	jnc	int0_int_set_pwm_damp_set
+	jnc	int0_int_set_pwm_damp_set		; Set damping to zero if no "spare" off time left. 
 
 	mov	Temp3, #0
 	mov	Temp4, #0
